@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            height: 70px;
+            background-color: #FB8B24;
+            padding: 0 20px; 
+        }
+
+        .logo {
+            height: 70px;
+            width: 80px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            word-spacing: 10px;
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #5F0F40;
+            transform: scale(1.1);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: solid;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #5F0F40;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3C0821;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <img src="logo.jpg" alt="Logo" class="logo">
+            
+        
+            <div>
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Rooms.html">Rooms</a>
+                <a href="contact.html">Contact</a>
+                <a href="signin.html">SignIn</a>
+                <button id="bookButton">Book Now</button>
+            </div>
+        </nav>
+    </header>
+    <p style="font-size: 30px;"><marquee direction="right" scrollamount="20">
+        <b>Book Now</b>
+     </marquee>
+     <script>        
+        const bookButton = document.getElementById("bookButton");
+        bookButton.addEventListener("click", function() {           
+            alert("You have successfully booked!");
+        });
+    </script>
+</body>
+</html>
